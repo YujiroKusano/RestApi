@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "node-start": "nohup node app.js > out.log 2> error.log &",
+    "nginx-start": "systemctl start nginx",
+    "nginx-stop": "systemctl stop nginx"
   },
   "keywords": [],
   "author": "",
