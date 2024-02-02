@@ -5,6 +5,9 @@ const PORT = process.env.PORT
 const bodyParser = require('body-parser');
 const session = require('express-session');
 
+
+
+// otameshi
 // Expressの設定
 const app = express();
 app.use(bodyParser.urlencoded({
@@ -16,7 +19,6 @@ app.use(session({
   resave: false,
   saveUninitialized: true,
 }));
-
 // ルーティング
 app.get("/", (request, response) => {
   response.status(200).send("Hello World");

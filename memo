@@ -1,0 +1,8 @@
+git clone
+git branch
+git branch [branchName]
+git checkout [branchName]
+git diff
+git add [fileName]
+git commit [fileName] -m "[commitment comment]"
+git push origin [remoteBranchName]
